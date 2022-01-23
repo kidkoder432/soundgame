@@ -1,0 +1,96 @@
+@import url('https: //fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+    font-family: sans-serif;
+    font-weight: 100;
+    background-color: lightblue;
+}
+
+p {
+    font-family: monospace;
+}
+
+
+h3 {
+    font-family: sans-serif;
+}
+
+
+.slider {
+    /* Use flexbox for slider wrapper element */
+    display: flex;
+    /* Direct alignment of content along horizontal axis */
+    flex-direction: row;
+    /* Tell's flexbox to center content around the non-horizontal axis (ie around the vertical axis) */
+    align-items: center;
+}
+
+.slider-label {
+    width: 30%; 
+    font-size: 2.5vw;
+}
+
+.slider-input {
+    /* Causes the input element to horizontally stretch to fill in available horizontal space */
+    flex: 0;
+}
+
+.slider-value {
+    width: 100px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.settings {
+    padding: 0 18px;
+    display: block;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.button {
+  background-color: chartreuse;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  margin: 10px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.button:hover {
+  background-color: greenyellow;
+}
+
+#play {
+    text-align: center;
+    font-size: 40px;
+}
+
+#controls {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 98%;
+}
+
+.control {
+    font-size: 20px;
+}
+
+#replay {
+    font-size: 12px;
+    width:35%;
+}
+
+#done {
+    display: block;
+    width: 80%;
+}
+
